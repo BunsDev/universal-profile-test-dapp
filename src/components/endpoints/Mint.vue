@@ -8,13 +8,12 @@ import LSP7Mintable from '@lukso/lsp-smart-contracts/artifacts/LSP7Mintable.json
 import LSP8Mintable from '@lukso/lsp-smart-contracts/artifacts/LSP8Mintable.json'
 import { DEFAULT_GAS, DEFAULT_GAS_PRICE } from '@/helpers/config'
 import Notifications from '@/components/Notification.vue'
-import { toWei } from 'web3-utils'
 import { ERC725 } from '@erc725/erc725.js'
 import { Lsp4Metadata } from '@/types'
 import Lsp4MetadataForm from '@/components/shared/Lsp4MetadataForm.vue'
 import { ContractStandard } from '@/enums'
 import LSPSelect from '@/components/shared/LSPSelect.vue'
-import { padLeft } from 'web3-utils'
+import { padLeft, toWei } from 'web3-utils'
 import { TokenInfo, LSPType } from '@/helpers/tokenUtils'
 
 const { notification, clearNotification, hasNotification, setNotification } =
